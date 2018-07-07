@@ -1,0 +1,114 @@
+查询收货地址
+
+接口：/Action/McenterQueryAddressAction.do
+
+参数：
+
+正常返回：{
+  "error": "201",
+  "msg": "成功",
+  "data": [
+    {
+      "address_id": "1106",
+      "receiver": "wz",
+      "province_id": "330000",
+      "city_id": "331000",
+      "area_id": "331002",
+      "area_name": "浙江省台州椒江",
+      "town_name": "dffff",
+      "phone": "17858975773"
+    },
+    {
+      "address_id": "1107",
+      "receiver": "wz",
+      "province_id": "330000",
+      "city_id": "331000",
+      "area_id": "331002",
+      "area_name": "浙江省台州椒江",
+      "town_name": "dddddddd",
+      "phone": "17858975773"
+    },
+    {
+      "address_id": "1105",
+      "receiver": "wz",
+      "province_id": "330000",
+      "city_id": "331000",
+      "area_id": "331002",
+      "area_name": "浙江省台州椒江",
+      "town_name": "adsadasdasdad",
+      "phone": "17858975773"
+    }
+  ]
+}
+
+---------------------------------------------------------
+
+修改收货地址
+
+接口：/Action/McenterUpdateAddressAction.do
+
+参数：
+{type:'0',user_id:'user_id',addressId:xxx},    
+或者   data:{type:"1",user_id:'user_id',receiver:receiver,town_name:town_name,province_id:prov_id,city_id:city_id,area_id:town_id,phone:phone,is_default:moren,area_name:area_name}
+或者   data:{type:"2",user_id:'user_id',receiver:receiver,town_name:town_name,province_id:prov_id,city_id:city_id,area_id:town_id,phone:phone,is_default:moren,area_name:area_name}
+
+type解释 0删除 1新增 2更新
+
+正常返回：
+{
+  "error": "201",
+  "msg": "成功",
+  "data": [
+    {
+      "taskId": "1371",
+      "result": "1"
+    }
+  ]
+}
+
+---------------------------------------------------------
+
+查询用户信息mobile
+
+接口：/Action/McenterIndexAction.do
+
+参数：
+
+正常返回：{
+  "error": "201",
+  "msg": "成功",
+  "data": [
+    {
+      "login_name": "17858975773",
+      "nick": "zz",
+      "rank": "1",
+      "balance": "0.31",
+      "credits": "0",
+      "valided_mobile": "1",
+      "valided_email": "0",
+      "avatar": "",
+      "is_seller": "0",
+      "valid_email": "dd@qq.com",
+      "valid_mobile": "17858975773",
+      "real_name": "wz",
+      "phone": "",
+      "idcard": "",
+      "idcard_front_img": "",
+      "idcard_back_img": ""
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

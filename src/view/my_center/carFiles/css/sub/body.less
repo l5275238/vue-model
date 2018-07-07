@@ -1,0 +1,126 @@
+.carinfolist{
+  width: 100%;
+  height: 180 / @base;
+  background-image: url("../../img/bg.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  background-color: #fafafa;
+
+  .carinfolist-item{
+    width: 100%;
+    padding-top: 28 / @base;
+    padding-bottom: 12 / @base;
+    text-align: center;
+    font-size: 14 / @base;
+
+    &-carLogo{
+      height: 72 / @base;
+      width: auto;
+      padding-bottom: 12 / @base;
+
+      img{
+        height: 100%;
+      }
+    }
+
+    &-carName{
+      .qshiconfont{
+        display: inline-block;
+        width: 18 / @base;
+        height: 18 / @base;
+        overflow: hidden;
+        background-size: contain!important;
+      }
+
+      .bianjiicon{
+        margin-left: 16 / @base;
+        background: url("../../img/01.png") no-repeat 50%;
+      }
+    }
+  }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 10 / @base!important;
+}
+
+.swiper-pagination-bullet{
+  width: 8 / @base;
+  height: 8 / @base;
+  display: inline-block;
+  border-radius: 50%;
+  background: none!important;
+  opacity: 0.6;
+  border: 1px solid #ed2011;
+}
+.swiper-pagination-bullet-active{
+  background: #ed2011!important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 5 / @base;
+}
+
+.setdefault-btn,.baoyang-records,.break-rules{
+  padding: 0 16 / @base;
+  height: 48 / @base;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  font-size: 14 / @base;
+
+  .iconfont{
+    color: #888888;
+    font-size: 16 / @base;
+  }
+
+  .unfinshend{
+    color: #999999;
+
+    span{
+      margin-left: 8 / @base;
+      color:#ed2011;
+      font-size: 12 / @base;
+    }
+  }
+}
+
+.setdefault-btn{
+  .weui_switch {
+    margin: 0;
+    -webkit-appearance: none;
+    width: 46 / @base;
+    height: 24 / @base;
+    border: 1px solid #d4d4d4;
+    border-radius: 14 / @base;
+    background: #d4d4d4;
+  }
+  .weui_switch::before {
+    width: 44 / @base;
+    height: 23 / @base;
+    border-radius: 15 / @base;
+    background-color:#EEEEEE;
+  }
+
+  .weui_switch::after {
+    width: 22 / @base;
+    height: 22 / @base;
+    border-radius: 13 / @base;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3 / @base;
+  }
+  .weui_switch:checked{
+    border-color: #ed2011;
+    background-color: #ed2011;
+  }
+  .weui_switch:checked::after {
+    transform: translateX(22 / @base);
+  }
+  .weui_switch:checked:before{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+}

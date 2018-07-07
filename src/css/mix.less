@@ -1,0 +1,92 @@
+@import "var.less";
+.diandian(){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.padding(){
+  padding: 0 @common-height*2;
+}
+
+.flex(@type: row){
+  display: flex;
+  flex-flow: @type nowrap;
+}
+
+.column-flex(){
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll(){
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.common_head(){
+  width: 100%;
+  height: @common-height*5;
+  position: relative;
+}
+
+.common_body(){
+  flex: 1;
+  width: 100%;
+  position: relative;
+  .scroll();
+  font-size: 14 / @base;
+}
+
+.common_container(){
+  height: 100%;
+  width: 100%;
+  position: relative;
+  max-width: 800px;/*no*/
+  margin: 0 auto;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.img-max{//商城及商品列表里的商品图
+  width: @common-height*12;
+  height: @common-height*12;
+}
+
+.img-min{//保养项目列表商品图
+  width: @common-height*10;
+  height: @common-height*10;
+}
+
+.common_btn(@bg:@common-red,@font-color:#ffffff){
+  width: 100%;
+  height: @common-height*6;
+  background: @bg;
+  color: @font-color;
+  border-radius: 5 / @base;
+  text-align: center;
+  line-height: @common-height*6;
+}
+
+.position(){
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99999999;
+
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: all 300ms ease-in-out;
+}
+
+.position-show(){
+  transform: translateX(0%);
+}

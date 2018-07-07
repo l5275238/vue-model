@@ -1,0 +1,62 @@
+@import "../../../../../css/mix";
+.my-order{
+  width:100%;
+  background-color: #fff;
+  & .my-order-title{
+    height:40/@base;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 16/@base;
+    border-bottom:1/@base solid #f2f2f2;
+    & span{
+      font-size: 14/@base;
+      color:#333;
+    }
+    & div span, & div .iconfont2{
+      font-size: 12/@base;
+      color:#999;
+    }
+  }
+  & .my-order-content{
+    width:100%;
+    height: 65/@base;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1;
+    & .myorder-item{
+      width: 72/@base;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position:relative;
+      & .iconfont2{
+        font-size: 22/@base;
+        color:#ed2011;
+      }
+      & span{
+        font-size: 12/@base;
+        color:#333;
+        margin-top: 8/@base;
+      }
+      & .mycenter-badge{
+        position:absolute;
+        background-color: white;
+        width:18/@base;
+        height:18/@base;
+        line-height: 18/@base;
+        border-radius: 50%;
+        color:#ed2011;
+        z-index:999;
+        left:38/@base;
+        top:-14/@base;
+        display: inline-block;
+        border:1/@base solid #ed2011;
+        font-size: 12/@base;
+        text-align: center;
+      }
+    }
+  }
+}
